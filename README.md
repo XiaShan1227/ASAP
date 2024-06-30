@@ -21,13 +21,13 @@
 | Weight decay | 0.0001 |
 
 2.运行程序 </br>
-模型：SAGPooling_Global </br>
+模型：ASAPooling_Global </br>
 数据集：DD
 ```python
 python main.py --exp_name=DD_Glo --dataset=DD --model=ASAPooling_Global
 ```
 
-模型：SAGPooling_Hierarchical </br>
+模型：ASAPooling_Hierarchical </br>
 数据集：PROTEINS
 ```python
 python main.py --exp_name=PROTEINS_Hie --dataset=PROTEINS --model=ASAPooling_Hierarchical
@@ -36,5 +36,5 @@ python main.py --exp_name=PROTEINS_Hie --dataset=PROTEINS --model=ASAPooling_Hie
 3.实验结果（8:1:1划分数据集，只做了一次实验的准确率，保留两位小数）
 | | **DD** | **MUTAG** | **NCI1** | **NCI109** | **PROTEINS** |
 |:-------------:|:-------------:|:------------:|:------------:|:------------:|:------------:|
-| **SAGPooling_Global**       |  61.34  |  80.00  |  64.48  |  73.91  |  73.21  |
-| **SAGPooling_Hierarchical** |  65.55  |  70.00  |  76.89  |  73.19  |  77.68  |
+| **ASAPooling_Global**       |  61.34  |  80.00  |  64.48  |  73.91  |  73.21  |
+| **ASAPooling_Hierarchical** |  65.55  |  70.00  |  76.89  |  73.19  |  77.68  |
